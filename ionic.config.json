@@ -1,0 +1,7 @@
+{
+  "name": "checkfit-app",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
