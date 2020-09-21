@@ -29,3 +29,9 @@ npm-debug.log*
 /platforms
 /plugins
 /www
+
+node_modules/
+platforms/
+plugins/
+resources/
+www/lib
