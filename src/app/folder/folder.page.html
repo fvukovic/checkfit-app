@@ -1,9 +1,12 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
     <ion-buttons slot="end">
-       <ion-menu-button></ion-menu-button>
-     </ion-buttons>
-    <ion-title>{{ folder }}</ion-title>
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ul>
+      <li><a (click)=changeLanguageToGerman()>German</a></li>
+      <li><a (click)=changeLanguageToEnglish()>English</a></li>
+    </ul>
   </ion-toolbar>
 </ion-header>
 
@@ -16,6 +19,7 @@
 
   <div id="container">
     <strong class="capitalize">{{ folder }}</strong>
-    <p>Explore <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
+    <p>Explore <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI
+        Components</a></p>
   </div>
 </ion-content>

@@ -3,52 +3,49 @@ import { Component, OnInit } from '@angular/core';
 import { Platform } from '@ionic/angular';
 import { SplashScreen } from '@ionic-native/splash-screen/ngx';
 import { StatusBar } from '@ionic-native/status-bar/ngx';
+import { injectStyles } from 'shadow-dom-inject-styles';
+import { TranslateService } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-root',
   templateUrl: 'app.component.html',
-  styleUrls: ['app.component.scss']
+  styleUrls: ['app.component.scss'],
 })
 export class AppComponent implements OnInit {
   public selectedIndex = 0;
   public appPages = [
     {
-      title: 'Inbox',
+      title: 'navigation.home',
       url: '/folder/Inbox',
-      icon: 'mail'
+      icon: 'home',
     },
     {
-      title: 'Outbox',
+      title: 'navigation.news',
       url: '/folder/Outbox',
-      icon: 'paper-plane'
+      icon: 'newspaper',
     },
     {
-      title: 'Favorites',
+      title: 'navigation.registration',
       url: '/folder/Favorites',
-      icon: 'heart'
+      icon: 'enter',
     },
     {
-      title: 'Archived',
+      title: 'navigation.login',
       url: '/folder/Archived',
-      icon: 'archive'
+      icon: 'log-in',
     },
     {
-      title: 'Trash',
-      url: '/folder/Trash',
-      icon: 'trash'
-    },
-    {
-      title: 'Spam',
-      url: '/folder/Spam',
-      icon: 'warning'
+      title: 'navigation.logout',
+      url: '',
+      icon: 'log-out',
     }
   ];
-  public labels = ['Family', 'Friends', 'Notes', 'Work', 'Travel', 'Reminders'];
-
+  
   constructor(
     private platform: Platform,
     private splashScreen: SplashScreen,
-    private statusBar: StatusBar
+    private statusBar: StatusBar,
+    private translate: TranslateService
   ) {
     this.initializeApp();
   }
@@ -58,12 +55,27 @@ export class AppComponent implements OnInit {
       this.statusBar.styleDefault();
       this.splashScreen.hide();
     });
+
+    this.translate.setDefaultLang('de');
   }
 
   ngOnInit() {
     const path = window.location.pathname.split('folder/')[1];
     if (path !== undefined) {
-      this.selectedIndex = this.appPages.findIndex(page => page.title.toLowerCase() === path.toLowerCase());
+      this.selectedIndex = this.appPages.findIndex(
+        (page) => page.title.toLowerCase() === path.toLowerCase()
+      );
     }
+
+    this.setDropdownMenuFullWith();
+  }
+
+  setDropdownMenuFullWith() {
+    let ionMenu = document.querySelector('ion-app ion-menu ') as HTMLElement;
+    // define style tag text
+    let styles = `.menu-inner {
+      width: 100%!important;
+    }`;
+    injectStyles(ionMenu, '.menu-inner', styles);
   }
 }

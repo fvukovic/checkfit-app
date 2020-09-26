@@ -1,0 +1,9 @@
+{
+    "navigation":{
+        "home":"HOME",
+        "news":"NEWS",
+        "registration":"REGISTRATION",
+        "login":"LOGIN",
+        "logout":"LOGOUT"
+    }
+}
