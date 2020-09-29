@@ -3,10 +3,18 @@
     <ion-buttons slot="end">
       <ion-menu-button></ion-menu-button>
     </ion-buttons>
-    <ul>
+    <ion-item>
+      <ion-select interface="popover" value="de">
+        <ion-select-option value="de">
+          <ion-item class="flag-de"></ion-item>German
+        </ion-select-option>
+        <ion-select-option value="at">Austrija</ion-select-option>
+      </ion-select>
+    </ion-item>
+    <!-- <ul>
       <li><a (click)=changeLanguageToGerman()>German</a></li>
       <li><a (click)=changeLanguageToEnglish()>English</a></li>
-    </ul>
+    </ul> -->
   </ion-toolbar>
 </ion-header>
 
@@ -17,9 +25,67 @@
     </ion-toolbar>
   </ion-header>
 
-  <div id="container">
-    <strong class="capitalize">{{ folder }}</strong>
-    <p>Explore <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI
-        Components</a></p>
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-12 banner-img">
+        <div class="row">
+          <div class="col-12 banner-logo"></div>
+        </div>
+        <div class="row justify-content-center search-row">
+          <div class="col-8">
+            <div class="row">
+              <div class="col-lg-3">
+                <ion-select interface="popover" placeholder="Choose Country">
+                  <ion-select-option value="at">Austrija</ion-select-option>
+                  <ion-select-option value="at">Austrija</ion-select-option>
+                </ion-select>
+              </div>
+              <div class="col-lg-3 ">
+                <ion-input type="number" placeholder="City / postcode"></ion-input>
+              </div>
+              <div class="col-lg-3 ">
+                <ion-select interface="popover" placeholder="Category">
+                  <ion-select-option value="at">Austrija</ion-select-option>
+                  <ion-select-option value="at">Austrija</ion-select-option>
+                </ion-select>
+              </div>
+              <div class="col-lg-2 mr-auto ml-auto">
+                <ion-button color="dark">
+                  <ion-icon name="search-outline"></ion-icon> &nbsp;&nbsp;Search
+                </ion-button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-12">
+        <div class="row justify-content-center">
+          <div class="col-12">
+            <span class="welcome">Welcome to the CHECK-FIT search portal</span>
+          </div>
+        </div>
+        <div class="row justify-content-center">
+          <div class="col-10 site-description">
+            <p class="text-justify font-weight-bold text-grey">
+              &nbsp;&nbsp;&nbsp;&nbsp; Are you looking for a gym, a professional trainer, or a massage studio? Then you
+              are in the right place.
+              With CHECK-FIT you can do this in three very simple steps. Select a country, location and category.
+            </p>
+            <p class="text-center font-weight-bold text-grey">
+              You can also advertise your company on our website.
+            </p>
+            <p class="text-center register-text">More details below:</p>
+          </div>
+        </div>
+        <div class="row justify-content-center">
+          <div class="col-10">
+            <ion-button class="btn-font-size-large" size="large" expand="full" color="dark">REGISTER YOUR PROFILE</ion-button>
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
+
 </ion-content>
