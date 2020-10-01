@@ -1,30 +1,30 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
     <ion-buttons slot="end">
-      <ion-menu-button></ion-menu-button>
+      <ion-menu-button color="light"></ion-menu-button>
     </ion-buttons>
-    <ion-item>
+    <!-- <ion-item>
       <ion-select interface="popover" value="de">
         <ion-select-option value="de">
           <ion-item class="flag-de"></ion-item>German
         </ion-select-option>
         <ion-select-option value="at">Austrija</ion-select-option>
       </ion-select>
-    </ion-item>
-    <!-- <ul>
-      <li><a (click)=changeLanguageToGerman()>German</a></li>
-      <li><a (click)=changeLanguageToEnglish()>English</a></li>
-    </ul> -->
+    </ion-item> -->
+    <ul class="toolbar-ul">
+      <li>
+        <img (click)="changeLanguageToGerman()" src="../../assets/images/flags/de_DE.png" width="18" height="12"
+          alt="de_DE" title="German">
+      </li>
+      <li>
+        <img (click)="changeLanguageToEnglish()" src="../../assets/images/flags/en_US.png" width="18" height="12"
+          alt="en_US" title="English">
+      </li>
+    </ul>
   </ion-toolbar>
 </ion-header>
 
 <ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">{{ folder }}</ion-title>
-    </ion-toolbar>
-  </ion-header>
-
   <div class="container-fluid">
     <div class="row">
       <div class="col-12 banner-img">
@@ -32,7 +32,7 @@
           <div class="col-12 banner-logo"></div>
         </div>
         <div class="row justify-content-center search-row">
-          <div class="col-8">
+          <div class="col-9">
             <div class="row">
               <div class="col-lg-3">
                 <ion-select interface="popover" placeholder="Choose Country">
@@ -59,33 +59,163 @@
         </div>
       </div>
     </div>
-    <div class="row">
-      <div class="col-12">
-        <div class="row justify-content-center">
-          <div class="col-12">
-            <span class="welcome">Welcome to the CHECK-FIT search portal</span>
+  </div>
+  <div class="container body">
+    <div class="block">
+      <div class="row justify-content-center">
+        <div class="col-12">
+          <span class="welcome">Welcome to the CHECK-FIT search portal</span>
+        </div>
+      </div>
+      <div class="row justify-content-center">
+        <div class="col-10 site-description">
+          <p class="text-center font-weight-bold text-grey">
+            Are you looking for a gym, a professional trainer, or a massage studio? Then you
+            are in the right place. With CHECK-FIT you can do this in three very simple steps.
+            Select a country, location and category.
+          </p>
+          <p class="text-center font-weight-bold text-grey">
+            You can also advertise your company on our website.
+          </p>
+          <p class="text-center register-text">More details below:</p>
+        </div>
+      </div>
+      <div class="row justify-content-center">
+        <div class="col-10">
+          <ion-button class="btn-font-size-large" size="large" expand="full" color="dark">REGISTER YOUR PROFILE
+          </ion-button>
+        </div>
+      </div>
+    </div>
+    <div class="block split-line">
+      <div class="row justify-content-center">
+        <div class="col-md-6 image-element">
+          <div class="img-wrap">
+            <img src="../../assets/images/img-free.jpg" alt="" title="">
           </div>
         </div>
-        <div class="row justify-content-center">
-          <div class="col-10 site-description">
-            <p class="text-justify font-weight-bold text-grey">
-              &nbsp;&nbsp;&nbsp;&nbsp; Are you looking for a gym, a professional trainer, or a massage studio? Then you
-              are in the right place.
-              With CHECK-FIT you can do this in three very simple steps. Select a country, location and category.
-            </p>
-            <p class="text-center font-weight-bold text-grey">
-              You can also advertise your company on our website.
-            </p>
-            <p class="text-center register-text">More details below:</p>
+        <div class="text-center col-md-6 description">
+          <span class="welcome">Basic profile (Free)</span>
+          <p class="text-center">
+            Would you like to create a free profile? Click on the registration button and enter your
+            details. The free
+            registration includes:
+          </p>
+          <ul class="register-list">
+            <li>Basic profile on our website</li>
+            <li>Upload 1 photo</li>
+            <li>Erscheint mit Name oder Firmenname</li>
+          </ul>
+          <ion-button class="text-center btn-font-size-large" size="large" color="dark">Register</ion-button>
+        </div>
+      </div>
+    </div>
+    <div class="block split-line">
+      <div class="row justify-content-center">
+        <div class="col-md-6 image-element">
+          <div class="img-wrap">
+            <img src="../../assets/images/img-premium.jpg" alt="" title="">
           </div>
         </div>
-        <div class="row justify-content-center">
-          <div class="col-10">
-            <ion-button class="btn-font-size-large" size="large" expand="full" color="dark">REGISTER YOUR PROFILE</ion-button>
+        <div class="text-center col-md-6 description">
+          <span class="welcome">Premium Profil (€178-Pro/Jahr Inkl.Mwst)</span>
+          <p class="text-center">Would you like to register for a premium profile?
+            Click on the registration button and enter your details. The premium profile
+            includes the following:
+          </p>
+          <ul class="register-list">
+            <li>Full profile on our website</li>
+            <li>Unlimited upload photos</li>
+            <li>Upload 1 video</li>
+            <li>2 locations possible with one profile</li>
+            <li>Ratings enabled</li>
+          </ul>
+          <ion-button class="text-center btn-font-size-large" size="large" color="dark">Register</ion-button>
+        </div>
+      </div>
+    </div>
+
+    <div class="block split-line no-margin">
+      <div class="row">
+        <div class="item-list">
+          <div class="col-lg-3 col-sm-6 col-xs-12 space">
+            <div class="company-wrapper">
+              <h3 class="text-uppercase tm-work-h3">Privacy</h3>
+              <p>The protection of your personal data is very important to us. Therefore we process
+                your data exclusively on the basis of the legal regulations (DSGVO, TKG 2003).
+                <a href="https://www.check-fit.com/en/testPage/datenschutz/">Show more</a></p>
+            </div>
+          </div>
+          <div class="col-lg-3 col-sm-6 col-xs-12 space">
+            <div class="company-wrapper">
+              <h3 class="text-uppercase tm-work-h3">Imprint</h3>
+              <p>Check-fit makes reasonable efforts to provide correct and complete information on this website.
+                <a href="https://www.check-fit.com/en/testPage/datenschutz/">Show more</a></p>
+            </div>
+          </div>
+          <div class="col-lg-3 col-sm-6 col-xs-12 space">
+            <div class="company-wrapper">
+              <h3 class="text-uppercase tm-work-h3">Contact</h3>
+              <ul>
+                <li>Döblingerhauptstraße 41/8</li>
+                <li>1190 Wien</li>
+                <li>Austria</li>
+                <li>office@check-fit.com</li>
+                <li>+43 676 913 1340</li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-lg-3 col-sm-6 col-xs-12 space">
+            <div class="company-wrapper">
+              <h3 class="text-uppercase tm-work-h3">Partners</h3>
+              <ul>
+                <li><a href="https://www.ptfit.at" class="white" target="_blank">PT-FIT</a></li>
+                <li><a href="https://www.toolsatwork.com/home" class="white" target="_blank">Tools at work</a></li>
+                <li><a href="http://www.web-tkalek.com" class="white" target="_blank">WEB Tkalek</a></li>
+              </ul>
+            </div>
           </div>
         </div>
       </div>
     </div>
+
+    <div class="block s-media-box">
+      <div class="row">
+        <div class="col-12">
+          <p>Besuchen Sie uns auch in sozialen Netzwerken</p>
+          <ul>
+            <li>
+              <a href=""><img src="https://www.check-fit.com/wp-content/uploads/2020/02/facebook.png"></a>
+            </li>
+            <li>
+              <a href=""><img src="https://www.check-fit.com/wp-content/uploads/2020/02/twitter.png"></a>
+            </li>
+            <li>
+              <a href=""><img src="https://www.check-fit.com/wp-content/uploads/2020/02/instagram.png"></a>
+            </li>
+            <li>
+              <a href=""><img src="https://www.check-fit.com/wp-content/uploads/2020/02/linkdn.png"></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="block botfooter">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="copyright text-center">
+            <p class="agbs"><a href="https://www.check-fit.com/testPage/Check-Fit.pdf" target="_blank">Terms of
+                Service</a></p>
+            <p> CHECK - FIT © 2020. All rights reserved.
+            </p>
+            <p> Developed by <a href="http://www.web-tkalek.com" target="_blank" class="web-tkalek">WEB tkalek</a>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
   </div>
 
 </ion-content>
