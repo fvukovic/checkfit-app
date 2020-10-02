@@ -38,14 +38,14 @@ export class AppComponent implements OnInit {
       title: 'navigation.logout',
       url: '',
       icon: 'log-out',
-    }
+    },
   ];
-  
+
   constructor(
     private platform: Platform,
     private splashScreen: SplashScreen,
     private statusBar: StatusBar,
-    private translate: TranslateService
+    public translate: TranslateService
   ) {
     this.initializeApp();
   }
@@ -55,8 +55,11 @@ export class AppComponent implements OnInit {
       this.statusBar.styleDefault();
       this.splashScreen.hide();
     });
-
+    this.translate.addLangs(['en', 'de']);
     this.translate.setDefaultLang('de');
+
+    const browserLang = this.translate.getBrowserLang();
+    this.translate.use(browserLang.match(/en|de/) ? browserLang : 'de');
   }
 
   ngOnInit() {

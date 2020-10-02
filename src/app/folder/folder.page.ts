@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
-import {TranslateService} from  '@ngx-translate/core';
+import { TranslateService } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-folder',
@@ -10,18 +10,20 @@ import {TranslateService} from  '@ngx-translate/core';
 export class FolderPage implements OnInit {
   public folder: string;
 
-  constructor(private activatedRoute: ActivatedRoute,
-    private translate: TranslateService) { }
+  constructor(
+    private activatedRoute: ActivatedRoute,
+    public translate: TranslateService
+  ) {}
 
   ngOnInit() {
     this.folder = this.activatedRoute.snapshot.paramMap.get('id');
   }
 
-  changeLanguageToGerman(){
+  changeLanguageToGerman() {
     this.translate.use('de');
   }
 
-  changeLanguageToEnglish(){
+  changeLanguageToEnglish() {
     this.translate.use('en');
   }
 }
