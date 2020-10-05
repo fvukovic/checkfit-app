@@ -117,3 +117,26 @@ ion-note {
 ion-item.selected {
   --color: var(--ion-color-primary);
 }
+
+/* Cuxstom css */
+
+ion-menu-button {
+  color: var(--ion-color-primary);
+}
+
+ion-header ion-toolbar {
+  background: transparent;
+  background-color: rgba(0, 0, 0, 0.815);
+  --opacity: 0;
+}
+.toolbar-ul {
+  vertical-align: middle;
+  margin-top: auto;
+  margin-bottom: auto;
+  padding-left: 20px;
+}
+
+.toolbar-ul li {
+  display: inline;
+  padding: 0 5px;
+}

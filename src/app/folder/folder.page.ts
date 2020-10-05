@@ -18,12 +18,4 @@ export class FolderPage implements OnInit {
   ngOnInit() {
     this.folder = this.activatedRoute.snapshot.paramMap.get('id');
   }
-
-  changeLanguageToGerman() {
-    this.translate.use('de');
-  }
-
-  changeLanguageToEnglish() {
-    this.translate.use('en');
-  }
 }

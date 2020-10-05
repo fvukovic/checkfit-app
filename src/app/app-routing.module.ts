@@ -13,6 +13,11 @@ const routes: Routes = [
       import('./folder/folder.module').then((m) => m.FolderPageModule),
   },
   {
+    path: 'login',
+    loadChildren: () =>
+      import('./login/login.module').then((m) => m.LoginPageModule),
+  },
+  {
     path: 'folder/:id',
     loadChildren: () =>
       import('./folder/folder.module').then((m) => m.FolderPageModule),

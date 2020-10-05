@@ -31,7 +31,7 @@ export class AppComponent implements OnInit {
     },
     {
       title: 'navigation.login',
-      url: '/folder/Archived',
+      url: '/login',
       icon: 'log-in',
     },
     {
@@ -71,6 +71,14 @@ export class AppComponent implements OnInit {
     }
 
     this.setDropdownMenuFullWith();
+  }
+
+  changeLanguageToGerman() {
+    this.translate.use('de');
+  }
+
+  changeLanguageToEnglish() {
+    this.translate.use('en');
   }
 
   setDropdownMenuFullWith() {
