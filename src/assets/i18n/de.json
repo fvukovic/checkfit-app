@@ -1,9 +1,67 @@
 {
-    "navigation":{
-        "home":"STARTSEITE",
-        "news":"NEUIGHEITEN",
-        "registration":"REGISTRIEREN",
-        "login":"EINLOGGEN",
-        "logout":"AUSLOGGEN"
+  "navigation": {
+    "home": "STARTSEITE",
+    "news": "NEUIGHEITEN",
+    "registration": "REGISTRIEREN",
+    "login": "EINLOGGEN",
+    "logout": "AUSLOGGEN"
+  },
+  "footer": {
+    "visit.us.social.network": "BESUCHEN SIE UNS AUCH IN SOZIALEN NETZWERKEN",
+    "terms": "ALLGEMEINE GESCHÄFTSBEDINGUNGEN",
+    "product": "CHECK-FIT © 2019. Alle Rechte vorbehalten.",
+    "developed1": "Entwickelt von",
+    "developed2": "WEB tkalek"
+  },
+  "home.page": {
+    "search": {
+      "placeholder": {
+        "country": "Land Auswählen",
+        "city/postalCode": "Stadt / PLZ",
+        "category": "Kategorie"
+      },
+      "btn": "Finden"
+    },
+    "welcome": {
+      "title": "Willkommen in Suchportal CHECK-FIT",
+      "article1": "Suchen Sie nach einem Fitnessstudio, einen Professionellen Trainer, oder nach einen Massagestudio? Dann sind sie am richtigen Ort. Mit CHECK-FIT können Sie dies in drei sehr einfachen Schritten tun. Wählen Sie ein Land, Ort und eine Kategorie aus.",
+      "article2": "Sie können Ihr Unternehmen auch auf unserer Website bewerben.",
+      "article3": "Weitere Details unten:",
+      "registerBtn": "REGISTRIEREN SIE IHR PROFIL"
+    },
+    "basic.profile": {
+      "title": "Grundprofil (Konstenlos)",
+      "article": "Möchten Sie ein kostenloses Profil erstellen? Klicken Sie auf den Registrierungsbutton und geben Sie Ihre Daten ein. Die kostenlose Registrierung umfasst Folgendes:",
+      "list1": "Grundprofil auf unseren Website",
+      "list2": "1 Foto hochladen",
+      "list3": "Erscheint mit Name oder Firmenname",
+      "registerBtn": "Registrieren"
+    },
+    "premium.profile": {
+      "title": "Premium Profil (€178 - Pro/Jahr Inkl.Mwst)",
+      "article": "Möchten Sie einen Premium-Profil registrieren? Klicken Sie auf den Registrierungsbutton und geben Sie Ihre Daten ein. Die Premium-Profil umfasst Folgendes:",
+      "list1": "Vollständiges Profil auf unseren Website",
+      "list2": "Unbegrenzt Fotos hochladen",
+      "list3": "1 Video hochladen",
+      "list4": "Mit einem Profil 2 Standorte möglich",
+      "list5": "Bewertungen aktiviert",
+      "registerBtn": "Registrieren"
+    },
+    "privacy": {
+      "title": "Datenschutz",
+      "article": "Der Schutz Ihrer persönlichen Daten ist uns ein besonderes Anliegen. Wir verarbeiten Ihre Daten daher ausschließlich auf Grundlage der gesetzlichen Bestimmungen (DSGVO, TKG 2003).",
+      "showMore": "Zeig mehr"
+    },
+    "imprint": {
+      "title": "Impressum",
+      "article": "Check-fit ist im Rahmen des Zumutbaren bemüht auf dieser Webseite richtige und vollständige Informationen zur Verfügung zu stellen.",
+      "showMore": "Zeig mehr"
+    },
+    "contact": {
+      "title": "Kontakt"
+    },
+    "partners": {
+      "title": "Partners"
     }
+  }
 }

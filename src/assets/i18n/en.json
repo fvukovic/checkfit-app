@@ -1,9 +1,67 @@
 {
-    "navigation":{
-        "home":"HOME",
-        "news":"NEWS",
-        "registration":"REGISTRATION",
-        "login":"LOGIN",
-        "logout":"LOGOUT"
+  "navigation": {
+    "home": "HOME",
+    "news": "NEWS",
+    "registration": "REGISTRATION",
+    "login": "LOGIN",
+    "logout": "LOGOUT"
+  },
+  "footer": {
+    "visit.us.social.network": "Visit us on social networks",
+    "terms": "Terms of service",
+    "product": "CHECK-FIT © 2019. All rights reserved.",
+    "developed1": "Developed by",
+    "developed2": "WEB tkalek"
+  },
+  "home.page": {
+    "search": {
+      "placeholder": {
+        "country": "Choose Country",
+        "city/postalCode": "City / postcode",
+        "category": "Category"
+      },
+      "btn": "Search"
+    },
+    "welcome": {
+      "title": "Welcome to the CHECK-FIT search portal",
+      "article1": "Are you looking for a gym, a professional trainer, or a massage studio? Then you are in the right place. With CHECK-FIT you can do this in three very simple steps. Select a country, location and category.",
+      "article2": "You can also advertise your company on our website.",
+      "article3": "More details below:",
+      "registerBtn": "REGISTER YOUR PROFILE"
+    },
+    "basic.profile": {
+      "title": "Basic profile (Free)",
+      "article": "Would you like to create a free profile? Click on the registration button and enter your details. The free registration includes:",
+      "list1": "Basic profile on our website",
+      "list2": "Upload 1 photo",
+      "list3": "Appear by name or company name",
+      "registerBtn": "Register"
+    },
+    "premium.profile": {
+      "title": "Premium profile (€178-per/year including VAT)",
+      "article": "Would you like to register for a premium profile? Click on the registration button and enter your details. The premium profile includes the following:",
+      "list1": "Full profile on our website",
+      "list2": "Unlimited upload photos",
+      "list3": "Upload 1 video",
+      "list4": "2 locations possible with one profile",
+      "list5": "Ratings enabled",
+      "registerBtn": "Register"
+    },
+    "privacy": {
+      "title": "Privacy",
+      "article": "The protection of your personal data is very important to us. Therefore we process your data exclusively on the basis of the legal regulations (DSGVO, TKG 2003).",
+      "showMore": "Show more"
+    },
+    "imprint": {
+      "title": "Imprint",
+      "article": "Check-fit makes reasonable efforts to provide correct and complete information on this website.",
+      "showMore": "Show more"
+    },
+    "contact": {
+      "title": "Contact"
+    },
+    "partners": {
+      "title": "Partners"
     }
+  }
 }
