@@ -26,7 +26,7 @@ export class AppComponent implements OnInit {
     },
     {
       title: 'navigation.registration',
-      url: '/folder/Favorites',
+      url: '/registration',
       icon: 'enter',
     },
     {
