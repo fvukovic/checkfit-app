@@ -72,7 +72,7 @@ ion-header ion-toolbar {
   max-width: 100%;
   height: 24vmin;
   position: absolute;
-  top: 2%;
+  top: 10%;
 }
 
 .search-row {
@@ -104,6 +104,11 @@ ion-header ion-toolbar {
   min-width: 135px;
 }
 
+.search-row div div div {
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
 .welcome {
   display: inherit;
   text-align: center;
@@ -123,7 +128,7 @@ ion-header ion-toolbar {
   margin-top: 1rem;
 }
 
-.no-padding{
+.no-padding {
   padding: 0;
 }
 

@@ -63,5 +63,12 @@
     "partners": {
       "title": "Partners"
     }
+  },
+  "login.page":{
+    "title":"Login",
+    "usernameEmail": "Username or E-Mail",
+    "password":"Password",
+    "loginBtn":"Login",
+    "forgotPassword":"Forgot your password?"
   }
 }
