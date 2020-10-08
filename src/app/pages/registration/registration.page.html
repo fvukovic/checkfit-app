@@ -1,9 +1,81 @@
-<ion-header>
-  <ion-toolbar>
-    <ion-title>registration</ion-title>
-  </ion-toolbar>
-</ion-header>
-
-<ion-content>
-
+<ion-content [fullscreen]="false">
+  <div class="container-fluid">
+    <div class="row banner-img-color">
+      <div class="col-12 banner-img"></div>
+    </div>
+  </div>
+  <div class="container page-section">
+    <div class="block">
+      <div class="row">
+        <div class="col-12">
+          <h2 class="page-title">{{"registration.page.title"| translate}}</h2>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-9">
+          <ion-label for="username">{{"registration.page.username"| translate}}</ion-label>
+          <ion-input inputmode="text" type="text" name="username" id="username">
+          </ion-input>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-9">
+          <ion-label for="first_name">{{"registration.page.firstName"| translate}}</ion-label>
+          <ion-input inputmode="text" type="text" name="first_name" id="first_name">
+          </ion-input>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-9">
+          <ion-label for="last_name">{{"registration.page.lastName"| translate}}</ion-label>
+          <ion-input inputmode="text" type="text" name="last_name" id="last_name">
+          </ion-input>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-9">
+          <ion-label for="email">{{"registration.page.email"| translate}}</ion-label>
+          <ion-input inputmode="text" type="text" name="email" id="email">
+          </ion-input>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-9">
+          <ion-label for="password">{{"registration.page.password"| translate}}</ion-label>
+          <ion-input class="valid" placeholder="{{'registration.page.passwordPlaceholder'| translate}}" autocomplete="off" inputmode="text" type="password" name="password" id="password">
+          </ion-input>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-9">
+          <ion-label for="confirmPassword">{{"registration.page.confirmPassword"| translate}}</ion-label>
+          <ion-input class="valid" placeholder="{{'registration.page.confirmPasswordPlaceholder'| translate}}" autocomplete="off" inputmode="text" type="password" name="confirmPassword"
+            id="confirmPassword">
+          </ion-input>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-9">
+          <ion-button size="default" color="dark" expand="full" type="submit"><span
+              class="green">{{"registration.page.registerBtn"| translate}}</span></ion-button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container-fluid">
+    <div class="block botfooter">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="copyright text-center">
+            <p class="agbs"><a href="https://www.check-fit.com/testPage/Check-Fit.pdf"
+                target="_blank">{{"footer.visit.us.social.network"| translate}}</a></p>
+            <p> {{"footer.product"| translate}}</p>
+            <p> {{"footer.developed1"| translate}} <a href="http://www.web-tkalek.com" target="_blank"
+                class="web-tkalek">{{"footer.developed2"| translate}}</a>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 </ion-content>
