@@ -8,6 +8,7 @@ import { FolderPageRoutingModule } from './folder-routing.module';
 
 import { FolderPage } from './folder.page';
 import { TranslateModule } from '@ngx-translate/core';
+import { FooterComponent } from '../../components/footer/footer.component';
 
 @NgModule({
   imports: [
@@ -17,6 +18,6 @@ import { TranslateModule } from '@ngx-translate/core';
     FolderPageRoutingModule,
     TranslateModule,
   ],
-  declarations: [FolderPage],
+  declarations: [FolderPage, FooterComponent],
 })
 export class FolderPageModule {}
