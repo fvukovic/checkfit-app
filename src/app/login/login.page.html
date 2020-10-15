@@ -1,0 +1,59 @@
+<ion-content [fullscreen]="false">
+    <div class="container-fluid">
+        <div class="row banner-img-color">
+            <div class="col-12 banner-img"></div>
+        </div>
+    </div>
+    <div class="container page-section">
+        <div class="block">
+            <div class="row">
+                <div class="col-12">
+                    <h2 class="page-title">{{"login.page.title"| translate}}</h2>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6">
+                    <ion-label for="username">{{"login.page.usernameEmail"| translate}}</ion-label>
+                    <ion-input autocomplete="off" inputmode="text" type="text" name="username" id="username">
+                    </ion-input>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6">
+                    <ion-label for="user_password">{{"login.page.password"| translate}}</ion-label>
+                    <div class="um-clear"></div>
+                    <ion-input class="valid" autocomplete="off" inputmode="text" type="password" name="user_password"
+                        id="user_password"></ion-input>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-6">
+                    <ion-button size="default" color="dark" expand="block" type="submit"><span
+                            class="green">{{"login.page.loginBtn"| translate}}</span></ion-button>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <a href="https://www.check-fit.com/en/password-reset/"
+                        class="forgot-password">{{"login.page.forgotPassword"| translate}}</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid">
+        <div class="block botfooter">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="copyright text-center">
+                        <p class="agbs"><a href="https://www.check-fit.com/testPage/Check-Fit.pdf"
+                                target="_blank">{{"footer.visit.us.social.network"| translate}}</a></p>
+                        <p> {{"footer.product"| translate}}</p>
+                        <p> {{"footer.developed1"| translate}} <a href="http://www.web-tkalek.com" target="_blank"
+                                class="web-tkalek">{{"footer.developed2"| translate}}</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</ion-content>

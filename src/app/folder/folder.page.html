@@ -1,21 +1,189 @@
-<ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-buttons slot="start">
-      <ion-menu-button></ion-menu-button>
-    </ion-buttons>
-    <ion-title>{{ folder }}</ion-title>
-  </ion-toolbar>
-</ion-header>
-
-<ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">{{ folder }}</ion-title>
-    </ion-toolbar>
-  </ion-header>
-
-  <div id="container">
-    <strong class="capitalize">{{ folder }}</strong>
-    <p>Explore <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
+<ion-content [fullscreen]="false">
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-12 banner-img">
+        <div class="row">
+          <div class="col-12 banner-logo"></div>
+        </div>
+        <div class="row justify-content-center search-row">
+          <div class="col-9">
+            <div class="row">
+              <div class="col-lg-3">
+                <ion-select interface="popover" placeholder='{{"home.page.search.placeholder.country" | translate}}'>
+                  <ion-select-option value="at">Austrija</ion-select-option>
+                  <ion-select-option value="at">Austrija</ion-select-option>
+                </ion-select>
+              </div>
+              <div class="col-lg-3 ">
+                <ion-input type="number" placeholder='{{"home.page.search.placeholder.city/postalCode" | translate}}'>
+                </ion-input>
+              </div>
+              <div class="col-lg-3 ">
+                <ion-select interface="popover" placeholder='{{"home.page.search.placeholder.category" | translate}}'>
+                  <ion-select-option value="at">Austrija</ion-select-option>
+                  <ion-select-option value="at">Austrija</ion-select-option>
+                </ion-select>
+              </div>
+              <div class="col-lg-2 mr-auto ml-auto">
+                <ion-button color="dark">
+                  <ion-icon name="search-outline"></ion-icon> &nbsp;&nbsp;{{"home.page.search.btn"| translate}}
+                </ion-button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
+  <div class="container body">
+    <div class="block">
+      <div class="row justify-content-center">
+        <div class="col-12">
+          <span class="welcome">{{"home.page.welcome.title"| translate}}</span>
+        </div>
+      </div>
+      <div class="row justify-content-center">
+        <div class="col-10 site-description">
+          <p class="text-center font-weight-bold text-grey">{{"home.page.welcome.article1"| translate}}</p>
+          <p class="text-center font-weight-bold text-grey">{{"home.page.welcome.article2"| translate}}</p>
+          <p class="text-center register-text">{{"home.page.welcome.article3"| translate}}</p>
+        </div>
+      </div>
+      <div class="row justify-content-center">
+        <div class="col-10 no-padding">
+          <ion-button class="btn-font-size-large" size="large" expand="full" color="dark">
+            {{"home.page.welcome.registerBtn"| translate}}
+          </ion-button>
+        </div>
+      </div>
+    </div>
+    <div class="block split-line">
+      <div class="row justify-content-center">
+        <div class="col-md-6 image-element">
+          <div class="img-wrap">
+            <img src="../../assets/images/img-free.jpg" alt="" title="">
+          </div>
+        </div>
+        <div class="text-center col-md-6 description">
+          <span class="welcome">{{"home.page.basic.profile.title"| translate}}</span>
+          <p class="text-center">{{"home.page.basic.profile.article"| translate}}</p>
+          <ul class="register-list">
+            <li>{{"home.page.basic.profile.list1"| translate}}</li>
+            <li>{{"home.page.basic.profile.list2"| translate}}</li>
+            <li>{{"home.page.basic.profile.list3"| translate}}</li>
+          </ul>
+          <ion-button class="text-center btn-font-size-large" size="large" color="dark">
+            {{"home.page.basic.profile.registerBtn"| translate}}</ion-button>
+        </div>
+      </div>
+    </div>
+    <div class="block split-line">
+      <div class="row justify-content-center">
+        <div class="col-md-6 image-element">
+          <div class="img-wrap">
+            <img src="../../assets/images/img-premium.jpg" alt="" title="">
+          </div>
+        </div>
+        <div class="text-center col-md-6 description">
+          <span class="welcome">{{"home.page.premium.profile.title"| translate}}</span>
+          <p class="text-center">{{"home.page.premium.profile.article"| translate}}</p>
+          <ul class="register-list">
+            <li>{{"home.page.premium.profile.list1"| translate}}</li>
+            <li>{{"home.page.premium.profile.list2"| translate}}</li>
+            <li>{{"home.page.premium.profile.list3"| translate}}</li>
+            <li>{{"home.page.premium.profile.list4"| translate}}</li>
+            <li>{{"home.page.premium.profile.list5"| translate}}</li>
+          </ul>
+          <ion-button class="text-center btn-font-size-large" size="large" color="dark">
+            {{"home.page.premium.profile.registerBtn"| translate}}</ion-button>
+        </div>
+      </div>
+    </div>
+
+    <div class="block split-line no-margin">
+      <div class="row">
+        <div class="item-list">
+          <div class="col-lg-3 col-sm-6 col-xs-12 space">
+            <div class="company-wrapper">
+              <h3 class="text-uppercase tm-work-h3">{{"home.page.privacy.title"| translate}}</h3>
+              <p>{{"home.page.privacy.article"| translate}}
+                <a
+                  href="https://www.check-fit.com/en/testPage/datenschutz/">{{"home.page.privacy.showMore"| translate}}</a>
+              </p>
+            </div>
+          </div>
+          <div class="col-lg-3 col-sm-6 col-xs-12 space">
+            <div class="company-wrapper">
+              <h3 class="text-uppercase tm-work-h3">{{"home.page.imprint.title"| translate}}</h3>
+              <p>{{"home.page.imprint.article"| translate}}
+                <a
+                  href="https://www.check-fit.com/en/testPage/datenschutz/">{{"home.page.privacy.showMore"| translate}}</a>
+              </p>
+            </div>
+          </div>
+          <div class="col-lg-3 col-sm-6 col-xs-12 space">
+            <div class="company-wrapper">
+              <h3 class="text-uppercase tm-work-h3">{{"home.page.contact.title"| translate}}</h3>
+              <ul>
+                <li>Döblingerhauptstraße 41/8</li>
+                <li>1190 Wien</li>
+                <li>Austria</li>
+                <li>office@check-fit.com</li>
+                <li>+43 676 913 1340</li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-lg-3 col-sm-6 col-xs-12 space">
+            <div class="company-wrapper">
+              <h3 class="text-uppercase tm-work-h3">{{"home.page.partners.title"| translate}}</h3>
+              <ul>
+                <li><a href="https://www.ptfit.at" class="white" target="_blank">PT-FIT</a></li>
+                <li><a href="https://www.toolsatwork.com/home" class="white" target="_blank">Tools at work</a></li>
+                <li><a href="http://www.web-tkalek.com" class="white" target="_blank">WEB Tkalek</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="block s-media-box">
+      <div class="row">
+        <div class="col-12">
+          <p>{{"footer.visit.us.social.network"| translate}}</p>
+          <ul>
+            <li>
+              <a href=""><img src="https://www.check-fit.com/wp-content/uploads/2020/02/facebook.png"></a>
+            </li>
+            <li>
+              <a href=""><img src="https://www.check-fit.com/wp-content/uploads/2020/02/twitter.png"></a>
+            </li>
+            <li>
+              <a href=""><img src="https://www.check-fit.com/wp-content/uploads/2020/02/instagram.png"></a>
+            </li>
+            <li>
+              <a href=""><img src="https://www.check-fit.com/wp-content/uploads/2020/02/linkdn.png"></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="block botfooter">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="copyright text-center">
+            <p class="agbs"><a href="https://www.check-fit.com/testPage/Check-Fit.pdf"
+                target="_blank">{{"footer.visit.us.social.network"| translate}}</a></p>
+            <p> {{"footer.product"| translate}}</p>
+            <p> {{"footer.developed1"| translate}} <a href="http://www.web-tkalek.com" target="_blank"
+                class="web-tkalek">{{"footer.developed2"| translate}}</a>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
 </ion-content>
