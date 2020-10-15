@@ -70,5 +70,17 @@
     "password":"Password",
     "loginBtn":"Login",
     "forgotPassword":"Forgot your password?"
+  },
+  "registration.page":{
+    "title":"Register",
+    "username":"Username",
+    "firstName":"First name",
+    "lastName":"Last name",
+    "email":"E-Mail Address",
+    "password":"Password",
+    "passwordPlaceholder":"Safe - upper and lower case and number. (8 characters)",
+    "confirmPassword":"Confirm Password",
+    "confirmPasswordPlaceholder":"Safe - upper and lower case and number. (8 characters)",
+    "registerBtn":"Register"
   }
 }
