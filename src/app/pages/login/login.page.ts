@@ -1,3 +1,4 @@
+import { AuthService } from './../../services/auth.service';
 import { Component, OnInit } from '@angular/core';
 import { TranslateService } from '@ngx-translate/core';
 
@@ -7,10 +8,23 @@ import { TranslateService } from '@ngx-translate/core';
   styleUrls: ['./login.page.scss'],
 })
 export class LoginPage implements OnInit {
-
-  constructor(public translate: TranslateService) { }
+public username: string;
+public password: string;
+  constructor(public translate: TranslateService, public authService: AuthService) { }
 
   ngOnInit() {
+  }
+
+  onLogin(){
+    console.log(this.username, this.password);
+    this.authService.postLogin(this.username, this.password).subscribe((data: any) => {
+      console.log(data);
+      if(data.success){
+        this.authService.setCurrentUser(data);
+        }else{
+            //Hendlaj error
+        }
+    });
   }
 
 }
