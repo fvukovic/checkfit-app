@@ -10,6 +10,7 @@ import { LoginPage } from './login.page';
 import { TranslateModule } from '@ngx-translate/core';
 import { FooterComponent } from 'src/app/components/footer/footer.component';
 import { AuthService } from 'src/app/services/auth.service';
+import { CheckFitBannerDarkComponent } from 'src/app/components/check-fit-banner-dark/check-fit-banner-dark.component';
 
 @NgModule({
   imports: [
@@ -20,6 +21,6 @@ import { AuthService } from 'src/app/services/auth.service';
     TranslateModule,
   ],
 
-  declarations: [LoginPage, FooterComponent]
+  declarations: [LoginPage, FooterComponent, CheckFitBannerDarkComponent],
 })
 export class LoginPageModule {}

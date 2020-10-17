@@ -1,9 +1,5 @@
 <ion-content [fullscreen]="false">
-  <div class="container-fluid">
-    <div class="row banner-img-color">
-      <div class="col-12 banner-img"></div>
-    </div>
-  </div>
+  <app-check-fit-banner-dark></app-check-fit-banner-dark>
   <div class="container page-section">
     <div class="block">
       <div class="row">
@@ -42,15 +38,16 @@
       <div class="row">
         <div class="col-md-9">
           <ion-label for="password">{{"registration.page.password"| translate}}</ion-label>
-          <ion-input class="valid" placeholder="{{'registration.page.passwordPlaceholder'| translate}}" autocomplete="off" inputmode="text" type="password" name="password" id="password">
+          <ion-input class="valid" placeholder="{{'registration.page.passwordPlaceholder'| translate}}"
+            autocomplete="off" inputmode="text" type="password" name="password" id="password">
           </ion-input>
         </div>
       </div>
       <div class="row">
         <div class="col-md-9">
           <ion-label for="confirmPassword">{{"registration.page.confirmPassword"| translate}}</ion-label>
-          <ion-input class="valid" placeholder="{{'registration.page.confirmPasswordPlaceholder'| translate}}" autocomplete="off" inputmode="text" type="password" name="confirmPassword"
-            id="confirmPassword">
+          <ion-input class="valid" placeholder="{{'registration.page.confirmPasswordPlaceholder'| translate}}"
+            autocomplete="off" inputmode="text" type="password" name="confirmPassword" id="confirmPassword">
           </ion-input>
         </div>
       </div>
