@@ -64,23 +64,35 @@
       "title": "Partners"
     }
   },
-  "login.page":{
-    "title":"Einloggen",
+  "login.page": {
+    "title": "Einloggen",
     "usernameEmail": "Benutzername oder E-Mail",
-    "password":"Passwort",
-    "loginBtn":"Einloggen",
-    "forgotPassword":"Password vergessen?"
+    "password": "Passwort",
+    "loginBtn": "Einloggen",
+    "forgotPassword": "Password vergessen?"
   },
-  "registration.page":{
-    "title":"Registrieren",
-    "username":"Benutzername",
-    "firstName":"Vorname",
-    "lastName":"Nachname",
-    "email":"E-Mail-Adresse",
-    "password":"Passwort",
-    "passwordPlaceholder":"Sicheres - Gross & Kleinschreibung und Nummer. (8 Zeichen)",
-    "confirmPassword":"Password bestätigen",
-    "confirmPasswordPlaceholder":"Sicheres - Gross & Kleinschreibung und Nummer. (8 Zeichen)",
-    "registerBtn":"Registrieren"
+  "registration.page": {
+    "title": "Registrieren",
+    "username": "Benutzername",
+    "firstName": "Vorname",
+    "lastName": "Nachname",
+    "email": "E-Mail-Adresse",
+    "password": "Passwort",
+    "passwordPlaceholder": "Sicheres - Gross & Kleinschreibung und Nummer. (8 Zeichen)",
+    "confirmPassword": "Password bestätigen",
+    "confirmPasswordPlaceholder": "Sicheres - Gross & Kleinschreibung und Nummer. (8 Zeichen)",
+    "registerBtn": "Registrieren"
+  },
+  "jobs.page": {
+    "title": "Suchergebnisse",
+    "search": {
+      "country": "Land",
+      "city/postalCode": "Stadt / PLZ",
+      "placeholder": {
+        "country": "Land Auswählen",
+        "city/postalCode": "Stadt / PLZ"
+      },
+      "btn": "Finden"
+    }
   }
 }

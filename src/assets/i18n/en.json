@@ -64,23 +64,35 @@
       "title": "Partners"
     }
   },
-  "login.page":{
-    "title":"Login",
+  "login.page": {
+    "title": "Login",
     "usernameEmail": "Username or E-Mail",
-    "password":"Password",
-    "loginBtn":"Login",
-    "forgotPassword":"Forgot your password?"
+    "password": "Password",
+    "loginBtn": "Login",
+    "forgotPassword": "Forgot your password?"
   },
-  "registration.page":{
-    "title":"Register",
-    "username":"Username",
-    "firstName":"First name",
-    "lastName":"Last name",
-    "email":"E-Mail Address",
-    "password":"Password",
-    "passwordPlaceholder":"Safe - upper and lower case and number. (8 characters)",
-    "confirmPassword":"Confirm Password",
-    "confirmPasswordPlaceholder":"Safe - upper and lower case and number. (8 characters)",
-    "registerBtn":"Register"
+  "registration.page": {
+    "title": "Register",
+    "username": "Username",
+    "firstName": "First name",
+    "lastName": "Last name",
+    "email": "E-Mail Address",
+    "password": "Password",
+    "passwordPlaceholder": "Safe - upper and lower case and number. (8 characters)",
+    "confirmPassword": "Confirm Password",
+    "confirmPasswordPlaceholder": "Safe - upper and lower case and number. (8 characters)",
+    "registerBtn": "Register"
+  },
+  "jobs.page": {
+    "title": "Search results",
+    "search": {
+      "country": "Country",
+      "city/postalCode": "City / postcode",
+      "placeholder": {
+        "country": "Choose Country",
+        "city/postalCode": "City / postcode"
+      },
+      "btn": "Search"
+    }
   }
 }

@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { ActivatedRoute } from '@angular/router';
+import { Router } from '@angular/router';
 import { TranslateService } from '@ngx-translate/core';
 
 @Component({
@@ -10,12 +10,11 @@ import { TranslateService } from '@ngx-translate/core';
 export class FolderPage implements OnInit {
   public folder: string;
 
-  constructor(
-    private activatedRoute: ActivatedRoute,
-    public translate: TranslateService
-  ) {}
+  constructor(private router: Router, public translate: TranslateService) {}
 
-  ngOnInit() {
-    this.folder = this.activatedRoute.snapshot.paramMap.get('id');
+  ngOnInit() {}
+
+  search() {
+    this.router.navigate(['/jobs']);
   }
 }

@@ -1,0 +1,40 @@
+<ion-content [fullscreen]="false">
+  <app-check-fit-banner-dark></app-check-fit-banner-dark>
+  <div class="container page-section">
+    <div class="block">
+      <div class="row">
+        <div class="col-12 text-center">
+          <h2 class="page-title">{{"jobs.page.title"| translate}}</h2>
+        </div>
+      </div>
+      <div class="row justify-content-md-center">
+        <div class="col-md-6">
+          <ion-label for="country">{{"jobs.page.search.country"| translate}}</ion-label>
+          <ion-select interface="popover" placeholder='{{"jobs.page.search.placeholder.country" | translate}}'
+            id="postalCode" name="postalCode">
+            <ion-select-option value="at">Austrija</ion-select-option>
+            <ion-select-option value="at">Austrija</ion-select-option>
+          </ion-select>
+        </div>
+
+        <div class="col-md-6">
+          <ion-label for="postalCode">{{"jobs.page.search.city/postalCode"| translate}}</ion-label>
+          <ion-input inputmode="text" type="text" name="country" id="country"
+            placeholder='{{"jobs.page.search.placeholder.city/postalCode"|translate}}'></ion-input>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-12 mr-auto ml-auto">
+          <ion-button color="dark" expand="full" (click)="search()">
+            <span class="green">
+              <ion-icon name="search-outline"></ion-icon> &nbsp;&nbsp;{{"jobs.page.search.btn"| translate}}
+            </span>
+          </ion-button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container-fluid">
+    <app-footer></app-footer>
+  </div>
+</ion-content>

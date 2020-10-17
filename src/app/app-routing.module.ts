@@ -29,6 +29,11 @@ const routes: Routes = [
         (m) => m.RegistrationPageModule
       ),
   },
+  {
+    path: 'jobs',
+    loadChildren: () => import('./pages/jobs/jobs.module').then( m => m.JobsPageModule)
+  },
+
 ];
 
 @NgModule({
