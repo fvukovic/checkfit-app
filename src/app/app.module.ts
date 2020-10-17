@@ -9,9 +9,11 @@ import { StatusBar } from '@ionic-native/status-bar/ngx';
 import { AppComponent } from './app.component';
 import { AppRoutingModule } from './app-routing.module';
 
-import { HttpClient, HttpClientModule } from '@angular/common/http';
+import { HttpClient, HttpClientModule, HTTP_INTERCEPTORS } from '@angular/common/http';
 import { TranslateModule, TranslateLoader } from '@ngx-translate/core';
 import { TranslateHttpLoader } from '@ngx-translate/http-loader';
+import { AuthService } from './services/auth.service';
+import { HttpHeadersInterceptor } from './pages/interceptor/auth.interceptor';
 
 export function createTranslateLoader(http: HttpClient) {
   return new TranslateHttpLoader(http, './assets/i18n/', '.json');
@@ -34,7 +36,13 @@ export function createTranslateLoader(http: HttpClient) {
     }),
   ],
   providers: [
+    AuthService,
     StatusBar,
+    {
+        provide: HTTP_INTERCEPTORS,
+        useClass: HttpHeadersInterceptor,
+        multi: true
+      },
     SplashScreen,
     { provide: RouteReuseStrategy, useClass: IonicRouteStrategy },
   ],

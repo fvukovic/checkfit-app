@@ -9,6 +9,7 @@ import { LoginPageRoutingModule } from './login-routing.module';
 import { LoginPage } from './login.page';
 import { TranslateModule } from '@ngx-translate/core';
 import { FooterComponent } from 'src/app/components/footer/footer.component';
+import { AuthService } from 'src/app/services/auth.service';
 
 @NgModule({
   imports: [
@@ -18,6 +19,7 @@ import { FooterComponent } from 'src/app/components/footer/footer.component';
     LoginPageRoutingModule,
     TranslateModule,
   ],
+
   declarations: [LoginPage, FooterComponent]
 })
 export class LoginPageModule {}

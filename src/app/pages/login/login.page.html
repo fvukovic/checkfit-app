@@ -14,7 +14,8 @@
             <div class="row">
                 <div class="col-md-6">
                     <ion-label for="username">{{"login.page.usernameEmail"| translate}}</ion-label>
-                    <ion-input autocomplete="off" inputmode="text" type="text" name="username" id="username">
+                    <ion-input autocomplete="off" inputmode="text" type="text" name="username" id="username"
+                        [(ngModel)]="username">
                     </ion-input>
                 </div>
             </div>
@@ -22,12 +23,12 @@
                 <div class="col-md-6">
                     <ion-label for="password">{{"login.page.password"| translate}}</ion-label>
                     <ion-input class="valid" autocomplete="off" inputmode="text" type="password" name="password"
-                        id="password"></ion-input>
+                        id="password" [(ngModel)]="password"></ion-input>
                 </div>
             </div>
             <div class="row">
                 <div class="col-6">
-                    <ion-button size="default" color="dark" expand="full" type="submit"><span
+                    <ion-button (click)="onLogin()" size="default" color="dark" expand="full" type="submit"><span
                             class="green">{{"login.page.loginBtn"| translate}}</span></ion-button>
                 </div>
             </div>
