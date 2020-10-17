@@ -1,0 +1,19 @@
+.container-fluid {
+  padding: 0;
+  margin: 0;
+}
+
+.banner-img-color {
+  background-color: #283037;
+}
+
+.banner-img {
+  display: inline-block;
+  background-image: url('../../../assets/images/login-slikica1-3.jpg');
+  background-size: inherit;
+  background-position: center;
+  background-repeat: no-repeat;
+  max-width: 100%;
+  margin-top: 45px;
+  height: 170px;
+}

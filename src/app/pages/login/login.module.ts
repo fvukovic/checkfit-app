@@ -9,6 +9,7 @@ import { LoginPageRoutingModule } from './login-routing.module';
 import { LoginPage } from './login.page';
 import { TranslateModule } from '@ngx-translate/core';
 import { AuthService } from 'src/app/services/auth.service';
+import { CheckFitBannerDarkComponent } from 'src/app/components/check-fit-banner-dark/check-fit-banner-dark.component';
 
 @NgModule({
   imports: [
@@ -18,6 +19,6 @@ import { AuthService } from 'src/app/services/auth.service';
     LoginPageRoutingModule,
     TranslateModule,
   ],
-  declarations: [LoginPage],
+  declarations: [LoginPage, CheckFitBannerDarkComponent],
 })
 export class LoginPageModule {}

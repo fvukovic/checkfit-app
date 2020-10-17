@@ -8,6 +8,7 @@ import { RegistrationPageRoutingModule } from './registration-routing.module';
 
 import { RegistrationPage } from './registration.page';
 import { TranslateModule } from '@ngx-translate/core';
+import { CheckFitBannerDarkComponent } from 'src/app/components/check-fit-banner-dark/check-fit-banner-dark.component';
 
 @NgModule({
   imports: [
@@ -17,6 +18,6 @@ import { TranslateModule } from '@ngx-translate/core';
     RegistrationPageRoutingModule,
     TranslateModule,
   ],
-  declarations: [RegistrationPage],
+  declarations: [RegistrationPage,CheckFitBannerDarkComponent],
 })
 export class RegistrationPageModule {}
