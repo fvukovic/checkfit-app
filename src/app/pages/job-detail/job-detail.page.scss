@@ -3,6 +3,11 @@
   margin: 0;
 }
 
+.block {
+  margin: 0;
+  padding: 30px 15px;
+  line-height: 26px;
+}
 
 .swiper-slide {
   display: block;
@@ -13,4 +18,28 @@
   pointer-events: none;
   height: 550px;
   object-fit: cover;
+}
+
+.avatar {
+  width: 75px;
+  border-radius: 50%;
+  height: auto;
+}
+
+.reviews {
+  font-size: 14px;
+}
+
+ion-icon {
+  color: #9fc131ff;
+  vertical-align: text-top;
+}
+
+.name{
+    color: #333;
+    letter-spacing: 1px;
+    font-size: 30px;
+    margin-top: 10px;
+    font-weight: 500;
+    line-height: 1.1;
 }
