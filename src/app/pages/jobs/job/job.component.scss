@@ -1,7 +1,7 @@
 .element {
   border: 1px solid #d3d3d3;
   border-radius: 0px;
-  padding-bottom: 15px;
+  padding-bottom: 0px;
   margin-bottom: 30px;
 }
 
@@ -22,4 +22,42 @@ h3 a {
   text-decoration: none;
   font-size: 21px;
   color: #333;
+}
+
+ion-icon {
+  color: #9fc131ff;
+  vertical-align: text-top;
+}
+
+.element-footer ion-icon {
+  font-size: 18px;
+  --ionicon-stroke-width: 40px;
+}
+
+.reviews {
+  font-size: 14px;
+}
+
+.online-free {
+  font-size: 16px;
+  color: #333;
+  font-weight: 600;
+}
+
+.line-up {
+  margin: 0;
+  padding: 8px 20px;
+}
+
+.element-footer {
+  border-top: 1px solid #eee;
+  margin: 0;
+  padding: 8px 0px 8px 20px;
+}
+
+.location {
+  font-size: 14px;
+  line-height: 23px;
+  padding-right: 10px;
+  vertical-align: sub;
 }
