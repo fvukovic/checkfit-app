@@ -10,6 +10,7 @@ import { JobsPage } from './jobs.page';
 import { CheckFitBannerDarkComponent } from 'src/app/components/check-fit-banner-dark/check-fit-banner-dark.component';
 import { FooterComponent } from 'src/app/components/footer/footer.component';
 import { TranslateModule } from '@ngx-translate/core';
+import { JobComponent } from './job/job.component';
 
 @NgModule({
   imports: [
@@ -20,6 +21,6 @@ import { TranslateModule } from '@ngx-translate/core';
     TranslateModule,
   ],
 
-  declarations: [JobsPage, FooterComponent, CheckFitBannerDarkComponent],
+  declarations: [JobsPage, FooterComponent, CheckFitBannerDarkComponent, JobComponent],
 })
 export class JobsPageModule {}

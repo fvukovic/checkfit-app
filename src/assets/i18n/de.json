@@ -92,7 +92,9 @@
         "country": "Land Auswählen",
         "city/postalCode": "Stadt / PLZ"
       },
-      "btn": "Finden"
+      "btn": "Finden",
+      "resultMessage": "Suche abgeschlossen. {{number}} passende Ergebnisse gefunden.",
+      "noMatching":"Es gibt keine zu Ihrer Suche passenden Jobangebote."
     }
   }
 }

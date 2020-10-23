@@ -1,6 +1,6 @@
 <ion-content [fullscreen]="false">
   <app-check-fit-banner-dark></app-check-fit-banner-dark>
-  <div class="container page-section">
+  <div class="container">
     <div class="block">
       <div class="row">
         <div class="col-12 text-center">
@@ -32,7 +32,44 @@
           </ion-button>
         </div>
       </div>
+      <!-- Ovaj blok je vidljiv samo nakon pretraživanje,
+            ne i prilikom prvog otvaranja stranice bez pretraživanja -->
+      <div class="row">
+        <div class="col-12 line">
+          <div>
+            <span class="green">{{"jobs.page.search.resultMessage" | translate:'{number: 5}'}}</span>
+          </div>
+        </div>
+      </div>
+      <!-- END BLOCK -->
+
+      <!-- Ovaj blok se treba prikazati kada search result nema rezultata -->
+      <div class="row">
+        <div class="col-12">
+          <div class="block-dark">
+            <span class="green text-uppercase text-center">{{"jobs.page.search.noMatching" | translate}}</span>
+          </div>
+        </div>
+      </div>
+      <!-- END BLOCK -->
+
     </div>
+    <div class="block">
+      <div class="list-view row">
+        <app-job class="col-md-4"></app-job>
+        <app-job class="col-md-4"></app-job>
+        <app-job class="col-md-4"></app-job>
+
+        <app-job class="col-md-4"></app-job>
+        <app-job class="col-md-4"></app-job>
+        <app-job class="col-md-4"></app-job>
+
+        <app-job class="col-md-4"></app-job>
+        <app-job class="col-md-4"></app-job>
+
+      </div>
+    </div>
+
   </div>
   <div class="container-fluid">
     <app-footer></app-footer>

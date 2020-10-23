@@ -92,7 +92,9 @@
         "country": "Choose Country",
         "city/postalCode": "City / postcode"
       },
-      "btn": "Search"
+      "btn": "Search",
+      "resultMessage": "Search completed. Found {{number}} matching records.",
+      "noMatching": "There are no listings matching your search."
     }
   }
 }

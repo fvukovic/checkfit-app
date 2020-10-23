@@ -14,11 +14,17 @@
     1px 1px 0 #101820ff;
 }
 
-.page-section {
+.block {
+    margin: 20px 0;
+    padding: 30px 15px;
+    line-height: 26px;
+  }
+
+/* .page-section {
   padding-left: 30px;
   padding-right: 30px;
   margin-bottom: 30px;
-}
+} */
 
 ion-label {
   color: #333;
@@ -55,4 +61,25 @@ ion-button {
 
 .green {
   color: #9fc131ff;
+}
+
+.line {
+  margin-top: 10px;
+  border-top: 1px solid #e5e5e5;
+  font-size: 14px;
+  padding-top: 10px;
+}
+
+.block-dark {
+  background-color: #101820ff;
+  font-size: 14px;
+  opacity: 0.9;
+  border-radius: 5px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+.block-dark span {
+  padding: 8px;
+  display: block;
 }
