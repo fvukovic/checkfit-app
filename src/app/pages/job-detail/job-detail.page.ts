@@ -7,9 +7,18 @@ import { Component, OnInit } from '@angular/core';
 })
 export class JobDetailPage implements OnInit {
 
+  slideOptsOne = {
+    initialSlide: 0,
+    slidesPerView: 1,
+    autoplay:true,
+    speed: 2000,
+   };
+
   constructor() { }
 
   ngOnInit() {
   }
+
+ 
 
 }
