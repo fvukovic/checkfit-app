@@ -96,5 +96,8 @@
       "resultMessage": "Search completed. Found {{number}} matching records.",
       "noMatching": "There are no listings matching your search."
     }
+  },
+  "job.detail.page": {
+    "details": "Details"
   }
 }

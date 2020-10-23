@@ -96,5 +96,8 @@
       "resultMessage": "Suche abgeschlossen. {{number}} passende Ergebnisse gefunden.",
       "noMatching":"Es gibt keine zu Ihrer Suche passenden Jobangebote."
     }
+  },
+  "job.detail.page": {
+    "details": "Details"
   }
 }
