@@ -98,6 +98,7 @@
     }
   },
   "job.detail.page": {
-    "details": "Details"
+    "details": "Details",
+    "reviews": "Reviews"
   }
 }
