@@ -1,0 +1,104 @@
+.comment {
+  padding: 10px 30px 10px 30px;
+
+  .space {
+    width: 91px;
+  }
+
+  @media (max-width: 768px) {
+    .space {
+      display: none;
+    }
+  }
+
+  .avatar {
+    display: inline-block;
+    margin-right: 20px;
+    vertical-align: top;
+    width: 75px;
+    border-radius: 50%;
+    height: auto;
+    img {
+      padding: 2px;
+      transition: all 0.2s ease-in-out;
+    }
+  }
+
+  .comment-details {
+    display: inline-block;
+    vertical-align: middle;
+  }
+
+  span {
+    display: block;
+  }
+
+  .comment-author {
+    display: flex;
+  }
+
+  .comment-author-name {
+    font-weight: 600;
+    color: #333;
+    margin-top: 7px;
+  }
+
+  .comment-date {
+    font-size: 14px;
+    color: #666;
+    margin-top: 8px;
+  }
+
+  .line-up {
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+
+  .comment-content {
+    font-size: 14px;
+    border: 1px solid #d3d3d3;
+    border-radius: 4px;
+    margin-top: 6px;
+    padding: 15px 20px 10px 20px;
+    flex-grow: 1;
+    max-width: none;
+
+    h3 {
+      font-size: 20px;
+      margin-bottom: 9px;
+      letter-spacing: 1px;
+      line-height: 22px;
+      color: #333;
+    }
+
+    .rating {
+      margin-bottom: 7px;
+    }
+
+    ion-icon {
+      color: #9fc131ff;
+      vertical-align: text-top;
+      font-size: 20px;
+      margin-right: 4px;
+    }
+
+    p {
+      margin-bottom: 10px;
+      color: #707070;
+      line-height: 26px;
+    }
+
+    img.wp-smiley,
+    img.emoji {
+      display: inline !important;
+      border: none !important;
+      box-shadow: none !important;
+      height: 1em !important;
+      width: 1em !important;
+      margin: 0 0.07em !important;
+      vertical-align: -0.1em !important;
+      background: none !important;
+      padding: 0 !important;
+    }
+  }
+}

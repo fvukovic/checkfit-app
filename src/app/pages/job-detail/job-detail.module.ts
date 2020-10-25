@@ -9,6 +9,7 @@ import { JobDetailPageRoutingModule } from './job-detail-routing.module';
 import { JobDetailPage } from './job-detail.page';
 import { TranslateModule } from '@ngx-translate/core';
 import { FooterComponent } from 'src/app/components/footer/footer.component';
+import { CommentComponent } from './comment/comment.component';
 
 @NgModule({
   imports: [
@@ -18,6 +19,6 @@ import { FooterComponent } from 'src/app/components/footer/footer.component';
     JobDetailPageRoutingModule,
     TranslateModule
   ],
-  declarations: [JobDetailPage,FooterComponent]
+  declarations: [JobDetailPage,FooterComponent, CommentComponent]
 })
 export class JobDetailPageModule {}
