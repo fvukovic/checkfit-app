@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { FormBuilder, FormControl, FormGroup } from '@angular/forms';
 import { TranslateService } from '@ngx-translate/core';
 
 @Component({
@@ -14,7 +15,24 @@ export class JobDetailPage implements OnInit {
     speed: 2000,
   };
 
-  constructor(public translate: TranslateService) {}
+  commentForm;
+  newCommentRating: number = 0;
 
-  ngOnInit() {}
+  constructor(
+    public translate: TranslateService,
+    private formBuilder: FormBuilder
+  ) {}
+
+  ngOnInit() {
+    this.commentForm = new FormGroup({
+      rating: new FormControl(0)
+    });
+
+    this.commentForm.rating = 0;
+  }
+
+  setRating(grade){
+    this.newCommentRating = grade;
+    this.commentForm.rating = grade;
+  }
 }

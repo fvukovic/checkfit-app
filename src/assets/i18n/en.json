@@ -98,7 +98,46 @@
     }
   },
   "job.detail.page": {
-    "details": "Details",
-    "reviews": "Reviews"
+    "details": {
+      "title": "Details",
+      "label": {
+        "country": "Country",
+        "city/postalCode": "City / postcode",
+        "address1": "Address: ",
+        "address2": "Street / House No. / Door No.",
+        "email": "EMAIL-ADDRESS",
+        "website": "Website",
+        "category": "Category",
+        "phone": "Phone",
+        "offer/price": "OFFER / PRICE",
+        "description": "Description",
+        "listing-expired": "This listing has expired."
+      }
+    },
+    "reviews": {
+      "title": "Reviews",
+      "label": {
+        "reply-title": "Leave a Reply",
+        "email-note": "Your email address will not be published. Required fields are marked *",
+        "message": "Message",
+        "name": "Name *",
+        "email": "Email *",
+        "website": "Website",
+        "rating": "Your overall rating of this listing",
+        "grade": {
+          "1": "Very bad",
+          "2": "Goes so",
+          "3": "Okay",
+          "4": "Very well",
+          "5": "Extraordinary"
+        },
+        "title": "Title of your review:"
+      },
+      "placeholder": {
+        "message": "Share your experiences or leave a tip for others",
+        "title": "Summarize your opinion or highlight an interesting detail"
+      },
+      "submit": "Submit"
+    }
   }
 }

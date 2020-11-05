@@ -131,3 +131,91 @@ ion-icon {
   top: 1em;
   left: 1.5em;
 }
+
+.write-comment {
+  padding: 10px 30px 90px 30px;
+}
+
+h3 {
+  font-size: 22px;
+  margin: 0 0 10px 0;
+  letter-spacing: 1px;
+  font-weight: 500;
+  color: #333;
+}
+
+.email-notes {
+  font-size: 16px;
+  font-weight: 400;
+  color: #707070;
+  line-height: 26px;
+  margin-bottom: 25px;
+}
+
+p {
+  ion-label {
+    text-transform: uppercase;
+    font-size: 14px;
+    color: #333;
+    margin-bottom: 5px;
+    font-weight: 600;
+  }
+
+  ion-textarea,
+  ion-input {
+    border: 2px solid #ddd;
+    background: #f2f2f2;
+    outline: 0 !important;
+    transition: all 0.5s ease-out 0s;
+    width: 100%;
+    border-radius: 4px;
+    color: #707070;
+  }
+
+  ion-textarea {
+    font-size: 14px;
+    height: 200px;
+    padding: 10px;
+    --padding-top: 0px;
+    --padding-bottom: 0px;
+    --padding-start: 0px;
+    --padding-end: 0px;
+  }
+
+  ion-input {
+    font-size: 13px;
+    box-shadow: none;
+    height: 40px;
+    --padding-start: 10px;
+    --padding-stop: 10px;
+  }
+}
+
+.rating {
+  margin-bottom: 25px;
+
+  .evaluation {
+    margin-left: 40px;
+    font-size: 12px;
+    font-weight: 400;
+    color: #707070;
+    vertical-align: sub;
+  }
+
+  ion-icon {
+    font-size: 20px;
+    padding: 2px;
+  }
+}
+
+button[type='submit'] {
+  border: 0;
+  padding: 12px 20px;
+  width: 100%;
+  font-size: 13px;
+  background-color: #101820ff;
+  border-radius: 0;
+  color: #9fc131ff;
+  text-transform: uppercase;
+  margin-top: 20px;
+}

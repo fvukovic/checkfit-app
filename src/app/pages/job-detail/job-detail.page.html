@@ -31,8 +31,8 @@
       <img
         src="https://www.check-fit.com/wp-content/uploads/job-manager-uploads/main_image/2020/03/kettlebell-3293475_1920.jpg" />
     </ion-slide>
-
   </ion-slides>
+
   <div class="container">
     <div class="block">
       <div class="row">
@@ -92,66 +92,67 @@
   <div class="container-fluid details-container">
     <div class="row">
       <div class="col-12 text-center">
-        <h3 class="title-review">{{"job.detail.page.details" | translate}}</h3>
+        <h3 class="title-review">{{"job.detail.page.details.title" | translate}}</h3>
       </div>
     </div>
 
     <div class="row">
       <div class="detail-wrapper">
-        <span class="detail-label">Country</span>
+        <span class="detail-label">{{"job.detail.page.details.label.country" | translate}}</span>
         <span class="detail-value">Austria</span>
       </div>
     </div>
     <div class="row">
       <div class="detail-wrapper">
-        <span class="detail-label">City / Postal Code</span>
+        <span class="detail-label">{{"job.detail.page.details.label.city/postalCode" | translate}}</span>
         <span class="detail-value">Wien/1190</span>
       </div>
     </div>
     <div class="row">
       <div class="detail-wrapper">
-        <span class="detail-label">Address: <br /> House Nr. / Door Nr. </span>
+        <span
+          class="detail-label">{{"job.detail.page.details.label.address1" | translate}}<br />{{"job.detail.page.details.label.address2" | translate}}</span>
         <span class="detail-value">Döblingerhauptstraße 41/8</span>
       </div>
     </div>
 
     <div class="row">
       <div class="detail-wrapper">
-        <div class="detail-label">EMAIL-ADDRESS</div>
+        <div class="detail-label">{{"job.detail.page.details.label.email" | translate}}</div>
         <div class="detail-value"> h.klampfer@gmail.com</div>
       </div>
     </div>
 
     <div class="row">
       <div class="detail-wrapper">
-        <div class="detail-label">WEBSITE</div>
+        <div class="detail-label">{{"job.detail.page.details.label.website" | translate}}</div>
         <div class="detail-value"> <a href="http://www.ptfit.at" target="_blank">www.ptfit.at</a></div>
       </div>
     </div>
 
     <div class="row">
       <div class="detail-wrapper">
-        <div class="detail-label">CATEGORY</div>
+        <div class="detail-label">{{"job.detail.page.details.label.category" | translate}}</div>
         <div class="detail-value"> Personaltrainer</div>
       </div>
     </div>
 
     <div class="row">
       <div class="detail-wrapper">
-        <div class="detail-label">PHONE</div>
+        <div class="detail-label">{{"job.detail.page.details.label.phone" | translate}}</div>
         <div class="detail-value"> 00436769131340</div>
       </div>
     </div>
     <div class="row">
       <div class="detail-wrapper">
-        <div class="detail-label">OFFER / PRICE</div>
+        <div class="detail-label">{{"job.detail.page.details.label.offer/price" | translate}}</div>
         <div class="detail-value"> Online Free</div>
       </div>
     </div>
 
     <div class="row">
       <div class="detail-wrapper description">
-        <div class="detail-label">Description</div>
+        <div class="detail-label">{{"job.detail.page.details.label.description" | translate}}</div>
         <div class="detail-value">Das beste Webportal, wo Sie den richtigen Personaltrainer in Ihrer Region finden.
         </div>
       </div>
@@ -159,13 +160,13 @@
 
     <div class="row">
       <div class="detail-wrapper job-manager-info">
-        This listing has expired.
+        {{"job.detail.page.details.label.listing-expired" | translate}}
       </div>
     </div>
 
     <div class="row">
       <div class="col-12 text-center">
-        <h3 class="title-review">{{"job.detail.page.reviews" | translate}}</h3>
+        <h3 class="title-review">{{"job.detail.page.reviews.title" | translate}}</h3>
       </div>
     </div>
 
@@ -173,7 +174,56 @@
     <app-comment></app-comment>
     <app-comment></app-comment>
 
-
+    <div class="row">
+      <div class="col-12">
+        <div class="write-comment">
+          <h3>{{"job.detail.page.reviews.label.reply-title" | translate}}</h3>
+          <form [formGroup]="commentForm">
+            <p class="email-notes">{{"job.detail.page.reviews.label.email-note" | translate}}</p>
+            <p>
+              <ion-label>{{"job.detail.page.reviews.label.message" | translate}}</ion-label>
+              <ion-textarea cols="45" rows="8"
+                placeholder="{{'job.detail.page.reviews.placeholder.message' | translate}}">
+              </ion-textarea>
+            </p>
+            <p>
+              <ion-label>{{"job.detail.page.reviews.label.name" | translate}}</ion-label>
+              <ion-input type="text"></ion-input>
+            </p>
+            <p>
+              <ion-label>{{"job.detail.page.reviews.label.email" | translate}}</ion-label>
+              <ion-input type="text"></ion-input>
+            </p>
+            <p>
+              <ion-label>{{"job.detail.page.reviews.label.website" | translate}}</ion-label>
+              <ion-input type="text"></ion-input>
+            </p>
+            <p>
+              <ion-label>{{"job.detail.page.reviews.label.rating" | translate}}</ion-label>
+            </p>
+            <div class="row rating">
+              <div class="col-12">
+                <ion-icon *ngFor="let star of [1,2,3,4,5]" [name]="star > newCommentRating ? 'star-outline' : 'star'"
+                  [attr.data-grade]="star" (click)="setRating(star)"></ion-icon>
+                <span class="evaluation"
+                  *ngIf="this.commentForm.rating != 0">{{"job.detail.page.reviews.label.grade."+this.commentForm.rating | translate}}</span>
+                <input hidden formControlName="rating" type="number" />
+              </div>
+            </div>
+            <p>
+              <ion-label>{{"job.detail.page.reviews.label.title" | translate}}</ion-label>
+              <ion-input type="text" placeholder="{{'job.detail.page.reviews.placeholder.title' | translate}}">
+              </ion-input>
+            </p>
+            <div class="row">
+              <div class="col-sm-3">
+                <button type="submit" class="submit">{{'job.detail.page.reviews.submit' | translate}}</button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
   </div>
 
   <div class="container-fluid">

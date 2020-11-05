@@ -94,11 +94,50 @@
       },
       "btn": "Finden",
       "resultMessage": "Suche abgeschlossen. {{number}} passende Ergebnisse gefunden.",
-      "noMatching":"Es gibt keine zu Ihrer Suche passenden Jobangebote."
+      "noMatching": "Es gibt keine zu Ihrer Suche passenden Jobangebote."
     }
   },
   "job.detail.page": {
-    "details": "Details",
-    "reviews": "Bewertungen"
+    "details": {
+      "title": "Details",
+      "label": {
+        "country": "Land",
+        "city/postalCode": "Stadt/PLZ",
+        "address1": "Adresse: ",
+        "address2": "Straße / Haus Nr. / Tür Nr.",
+        "email": "EMAIL ADDRESSE",
+        "website": "Website",
+        "category": "Kategorie",
+        "phone": "Telefon",
+        "offer/price": "Angebot/Preis",
+        "description": "Beschreibung",
+        "listing-expired": "Dieses Jobangebot ist abgelaufen."
+      }
+    },
+    "reviews": {
+      "title": "Bewertungen",
+      "label": {
+        "reply-title": "Schreiben Sie ein Kommentar",
+        "email-note": "Deine E-Mail-Adresse wird nicht veröffentlicht. Erforderliche Felder sind mit * markiert.",
+        "message": "Nachricht",
+        "name": "Name *",
+        "email": "Email *",
+        "website": "Website",
+        "rating": "Ihre Gesamtbewertung dieses Verzeichnisses",
+        "grade": {
+          "1": "Sehr schlecht",
+          "2": "Geht so",
+          "3": "In Ordnung",
+          "4": "Sehr gut",
+          "5": "Außergewöhnlich"
+        },
+        "title": "Titel deiner Bewertung:"
+      },
+      "placeholder": {
+        "message": "Erzählen Sie von Ihren Erfahrungen oder hinterlassen Sie anderen einen Tipp",
+        "title": "Fassen Sie Ihre Meinung zusammen oder heben Sie ein interessantes Detail hervor"
+      },
+      "submit": "Speichern"
+    }
   }
 }
