@@ -128,7 +128,16 @@ ion-header ion-toolbar {
   background: transparent;
   background-color: rgba(0, 0, 0, 0.815);
   --opacity: 0;
+  --padding-buttom:0;
+  --padding-top:0;
+  --padding-start:0;
+  --padding-end:0;
 }
+
+ion-header.header-md::after{
+  display:none;
+}
+
 .toolbar-ul {
   vertical-align: middle;
   margin-top: auto;

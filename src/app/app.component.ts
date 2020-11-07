@@ -5,6 +5,10 @@ import { SplashScreen } from '@ionic-native/splash-screen/ngx';
 import { StatusBar } from '@ionic-native/status-bar/ngx';
 import { injectStyles } from 'shadow-dom-inject-styles';
 import { TranslateService } from '@ngx-translate/core';
+import { Plugins } from '@capacitor/core';
+const { App } = Plugins;
+import { Location } from '@angular/common';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-root',
@@ -45,7 +49,9 @@ export class AppComponent implements OnInit {
     private platform: Platform,
     private splashScreen: SplashScreen,
     private statusBar: StatusBar,
-    public translate: TranslateService
+    public translate: TranslateService,
+    private location: Location,
+    private router: Router
   ) {
     this.initializeApp();
   }
@@ -60,6 +66,14 @@ export class AppComponent implements OnInit {
 
     const browserLang = this.translate.getBrowserLang();
     this.translate.use(browserLang.match(/en|de/) ? browserLang : 'de');
+
+    this.platform.backButton.subscribeWithPriority(-1, () => {
+      if (this.router.url == '/home') {
+        App.exitApp();
+      } else {
+        this.location.back();
+      }
+    });
   }
 
   ngOnInit() {
