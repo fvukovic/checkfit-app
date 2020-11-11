@@ -6,9 +6,11 @@ import { StatusBar } from '@ionic-native/status-bar/ngx';
 import { injectStyles } from 'shadow-dom-inject-styles';
 import { TranslateService } from '@ngx-translate/core';
 import { Plugins } from '@capacitor/core';
-const { App } = Plugins;
 import { Location } from '@angular/common';
 import { Router } from '@angular/router';
+import { StorageService } from './services/storage.service';
+
+const { App } = Plugins;
 
 @Component({
   selector: 'app-root',
@@ -51,7 +53,8 @@ export class AppComponent implements OnInit {
     private statusBar: StatusBar,
     public translate: TranslateService,
     private location: Location,
-    private router: Router
+    private router: Router,
+    private storage: StorageService
   ) {
     this.initializeApp();
   }
@@ -64,8 +67,16 @@ export class AppComponent implements OnInit {
     this.translate.addLangs(['en', 'de']);
     this.translate.setDefaultLang('de');
 
-    const browserLang = this.translate.getBrowserLang();
-    this.translate.use(browserLang.match(/en|de/) ? browserLang : 'de');
+    if (this.translate.currentLang == undefined) {
+      this.storage.getString('lang').then((data: any) => {
+        if (data.value) {
+          this.translate.use(data.value);
+        } else {
+          this.translate.use('de');
+          this.storage.setString('lang', this.translate.currentLang);
+        }
+      });
+    }
 
     this.platform.backButton.subscribeWithPriority(-1, () => {
       if (this.router.url == '/home') {
@@ -89,10 +100,12 @@ export class AppComponent implements OnInit {
 
   changeLanguageToGerman() {
     this.translate.use('de');
+    this.storage.setString('lang', 'de');
   }
 
   changeLanguageToEnglish() {
     this.translate.use('en');
+    this.storage.setString('lang', 'en');
   }
 
   setDropdownMenuFullWith() {
