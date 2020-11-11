@@ -31,6 +31,11 @@ export class AppComponent implements OnInit {
       icon: 'newspaper',
     },
     {
+      title: 'navigation.my-account',
+      url: '/my-account',
+      icon: 'person-circle',
+    },
+    {
       title: 'navigation.registration',
       url: '/registration',
       icon: 'enter',

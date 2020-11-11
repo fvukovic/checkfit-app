@@ -4,7 +4,8 @@
     "news": "NEWS",
     "registration": "REGISTRATION",
     "login": "LOGIN",
-    "logout": "LOGOUT"
+    "logout": "LOGOUT",
+    "my-account": "MY ACCOUNT"
   },
   "footer": {
     "visit.us.social.network": "Visit us on social networks",

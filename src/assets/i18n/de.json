@@ -4,7 +4,8 @@
     "news": "NEUIGHEITEN",
     "registration": "REGISTRIEREN",
     "login": "EINLOGGEN",
-    "logout": "AUSLOGGEN"
+    "logout": "AUSLOGGEN",
+    "my-account":"MEIN KONTO"
   },
   "footer": {
     "visit.us.social.network": "BESUCHEN SIE UNS AUCH IN SOZIALEN NETZWERKEN",
