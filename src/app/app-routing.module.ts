@@ -10,17 +10,12 @@ const routes: Routes = [
   {
     path: 'home',
     loadChildren: () =>
-      import('./pages/folder/folder.module').then((m) => m.FolderPageModule),
+      import('./pages/home/home.module').then((m) => m.HomePageModule),
   },
   {
     path: 'login',
     loadChildren: () =>
       import('./pages/login/login.module').then((m) => m.LoginPageModule),
-  },
-  {
-    path: 'folder/:id',
-    loadChildren: () =>
-      import('./pages/folder/folder.module').then((m) => m.FolderPageModule),
   },
   {
     path: 'registration',

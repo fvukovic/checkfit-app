@@ -3,11 +3,11 @@ import { Router } from '@angular/router';
 import { TranslateService } from '@ngx-translate/core';
 
 @Component({
-  selector: 'app-folder',
-  templateUrl: './folder.page.html',
-  styleUrls: ['./folder.page.scss'],
+  selector: 'app-home',
+  templateUrl: './home.page.html',
+  styleUrls: ['./home.page.scss'],
 })
-export class FolderPage implements OnInit {
+export class HomePage implements OnInit {
   public folder: string;
 
   constructor(private router: Router, public translate: TranslateService) {}
