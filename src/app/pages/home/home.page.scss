@@ -41,45 +41,65 @@ ion-header ion-toolbar {
   background-position: center;
   background-repeat: no-repeat;
   max-width: 100%;
-  height: 24vmin;
+  height: 180px;
   position: absolute;
-  top: 10%;
+  top: 62px;
 }
 
 .search-row {
   position: absolute;
-  bottom: 10%;
+  bottom: 30px;
   width: 100%;
-  text-align: center;
-}
-
-.search-row .row {
-  background-color: white;
-  border-radius: 10px;
-  padding: 8px;
+  text-align: left;
 }
 
 .search-row .row div {
-  padding: 2px 5px;
-  margin-right: 2px;
+  padding: 1px 5px;
+}
+
+.search-row ion-select,
+ion-input {
+  background-color: #fff;
+  color: #666;
+  --placeholder-opacity: 0.7;
+  line-height: 33px;
+  --padding-start: 8px;
+  --padding-end: 8px;
+  --padding-top: 2px;
+  --padding-bottom: 2px;
+  letter-spacing: normal;
+  font-size: 14px;
 }
 
 @media only screen and (min-width: 992px) {
   .search-row .row div:nth-child(-n + 2) {
     border-right: 1px solid #101820ff;
   }
+
+  .banner-logo {
+    height: 61%;
+    top: 60px;
+  }
+
+  .search-row .row div {
+    margin-right: 2px;
+  }
 }
 
 .search-row ion-button {
   width: 100%;
   min-width: 135px;
-  font-size: 16px;
+  font-size: 15px;
   --padding-start: 8px;
   --padding-end: 8px;
+  --border-radius: 0px;
+  margin: 0;
+  height: 37px;
+  --background: #101820ff;
 }
 
-.green{
-  color: #9FC131FF;
+.green {
+  color: #9fc131ff;
 }
 
 .search-row div div div {
@@ -119,7 +139,7 @@ ion-header ion-toolbar {
   color: grey;
 }
 
-.btn-narrow{
+.btn-narrow {
   height: 37px;
 }
 

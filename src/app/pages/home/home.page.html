@@ -6,26 +6,26 @@
           <div class="col-12 banner-logo"></div>
         </div>
         <div class="row justify-content-center search-row">
-          <div class="col-9">
+          <div class="col-11">
             <div class="row">
-              <div class="col-lg-3">
+              <div class="col-md-3">
                 <ion-select interface="popover" placeholder='{{"home.page.search.placeholder.country" | translate}}'>
                   <ion-select-option value="at">Austrija</ion-select-option>
                   <ion-select-option value="at">Austrija</ion-select-option>
                 </ion-select>
               </div>
-              <div class="col-lg-3 ">
+              <div class="col-md-3 ">
                 <ion-input type="number" placeholder='{{"home.page.search.placeholder.city/postalCode" | translate}}'>
                 </ion-input>
               </div>
-              <div class="col-lg-3 ">
+              <div class="col-md-3 ">
                 <ion-select interface="popover" placeholder='{{"home.page.search.placeholder.category" | translate}}'>
                   <ion-select-option value="at">Austrija</ion-select-option>
                   <ion-select-option value="at">Austrija</ion-select-option>
                 </ion-select>
               </div>
-              <div class="col-lg-2 mr-auto ml-auto">
-                <ion-button color="dark" (click)="search()">
+              <div class="col-md-2 mr-auto ml-auto">
+                <ion-button (click)="search()">
                   <span class="green">
                     <ion-icon name="search-outline"></ion-icon> &nbsp;&nbsp;{{"home.page.search.btn"| translate}}
                   </span>
